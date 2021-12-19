@@ -111,16 +111,16 @@ class IHMMouvement extends JPanel implements ActionListener {
 	private Ardoise ardoise = new Ardoise();
 
 	IHMMouvement() {
-		arret.setActionCommand("arreter");
+		arret.setActionCommand("arreter1");
 		arret.addActionListener(ardoise);
 		arret.addActionListener(this);
 
-		reprise.setActionCommand("reprendre");
+		reprise.setActionCommand("reprendre1");
 		reprise.addActionListener(ardoise);
 		reprise.addActionListener(this);
 		reprise.setEnabled(false);
 
-		couleurs.setActionCommand("changerCouleurs");
+		couleurs.setActionCommand("changerCouleurs1");
 		couleurs.addActionListener(ardoise);
 
 		JPanel boutons = new JPanel();		
