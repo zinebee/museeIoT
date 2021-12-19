@@ -20,10 +20,10 @@ public class Acceuil extends JFrame implements ActionListener{
     JButton a;
     JButton b;
     public Acceuil(){
-      setTitle("Acceuil");
+      setTitle("AcceuilS");
       setVisible(true);
-      a=new JButton("Directeur");
-      b=new JButton("Responsable");
+      a=new JButton("DirecteurS");
+      b=new JButton("ResponsableS");
       a.addActionListener(this);
       b.addActionListener(this);
       setDefaultCloseOperation(3);
