@@ -16,6 +16,7 @@ import java.util.logging.Logger;
  * @author zineb
  */
 public class receptiontableau implements Runnable{
+	//test1
 
     @Override
     public void run() {
