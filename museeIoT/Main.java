@@ -22,6 +22,7 @@ import javax.swing.event.InternalFrameEvent;
 import javax.swing.event.InternalFrameListener;
 public class Main extends JFrame {
     JTable table;
+    //un comment sur main
     public Main() throws SQLException{
     //Header de JTable 
     /*String[] columns = new String[] {"Id","Nom","Adresse","Taux horaire"," "};
