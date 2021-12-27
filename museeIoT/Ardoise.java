@@ -30,6 +30,7 @@ import javax.swing.Timer;
 
 @SuppressWarnings("serial")
 class Ardoise extends JPanel implements ActionListener {
+	//je commente cette ligne
 	private Timer declencheur;
 	private Random alea;
 	private Image terre;
