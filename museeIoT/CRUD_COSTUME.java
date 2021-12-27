@@ -29,6 +29,7 @@ import museeiot.Tableaud;
 public class CRUD_COSTUME implements Runnable{
 	//mon commentaire CRUD_COSTUME
 	//un second commentaire CRUD_COSTUME
+	//un troisieme commentaire CRUD_COSTUME
    /* public int Ajoutercostume(Costumed c) throws SQLException{
         int rs=0;
         try {
