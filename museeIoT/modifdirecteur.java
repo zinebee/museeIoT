@@ -33,6 +33,7 @@ import javax.swing.table.TableCellRenderer;
  * @author zineb
  */
 public class modifdirecteur implements TableCellRenderer, TableCellEditor {
+	//test3
    JButton btn;
    JButton btn2;
    int row;
