@@ -33,6 +33,7 @@ import javax.swing.table.TableCellRenderer;
  * @author zineb
  */
 public class modifsculpture implements TableCellRenderer, TableCellEditor {
+	//test2
    JButton btn;
    JButton btn2;
    int row;
