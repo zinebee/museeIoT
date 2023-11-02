@@ -1,0 +1,93 @@
+openapi: 3.0.3
+info:
+  title: REST iPaaS ADM PL
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: https://ipaasgw.edicomgroup.com
+paths:
+  /api/v1/domain/172614/application/172614/broker/publish:
+    post:
+      summary: publish
+      description: publish
+      operationId: publish
+      parameters:
+        - name: duplicates
+          in: query
+          schema:
+            type: string
+            example: '0'
+        - name: ''
+          in: query
+          schema:
+            type: string
+            example: ''
+        - name: schema
+          in: query
+          schema:
+            type: string
+            example: CSV_INVOICE_172614
+        - name: destination
+          in: query
+          schema:
+            type: string
+            example: '172614'
+        - name: X-eipaas-ds
+          in: header
+          schema:
+            type: string
+            example: ASPEDI100
+        - name: Content-Transfer-Encoding
+          in: header
+          schema:
+            type: string
+            example: ''
+      requestBody:
+        content:
+          text/plain:
+            examples:
+              publish:
+                value: "----------------------------319625653082021332022715\r\nContent-Disposition: form-data; name=\"files\"; filename=\"test.csv\"\r\n\r\ntest é test gg\r\n----------------------------319625653082021332022715--"
+      responses:
+        '200':
+          description: ''
+  /api/v1/domain/172614/application/172614_EDIWIN/broker/subscription/confirm:
+    get:
+      summary: confim
+      description: confim
+      operationId: confim
+      parameters:
+        - name: X-eipaas-ds
+          in: header
+          schema:
+            type: string
+            example: ASPEDI100
+      requestBody:
+        content:
+          text/plain:
+            examples:
+              confim:
+                value: ''
+      responses:
+        '200':
+          description: ''
+  /api/v1/domain/141238/application/141238/broker/subscription:
+    get:
+      summary: subscription
+      description: subscription
+      operationId: subscription
+      parameters:
+        - name: schema
+          in: query
+          schema:
+            type: string
+            example: EDI_ORDERS_D_96A_UN_EAN008
+        - name: X-eipaas-ds
+          in: header
+          schema:
+            type: string
+            example: ASPEDI90
+      responses:
+        '200':
+          description: ''
+tags: []
